@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Home</title>
+		<link rel="icon" href="images/favicon.ico">
+		<link rel="shortcut icon" href="images/favicon.ico" />
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/camera.css">
+		<link rel="stylesheet" href="css/form.css">
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery-migrate-1.1.1.js"></script>
+		<script src="js/superfish.js"></script>
+		<script src="js/forms.js"></script>
+		<script src="js/jquery.ui.totop.js"></script>
+		<script src="js/jquery.equalheights.js"></script>
+		<script src="js/jquery.easing.1.3.js"></script>
+		<script src="js/jquery.ui.totop.js"></script>
+		<script src="js/tms-0.4.1.js"></script>
+		<script>
+			$(document).ready(function(){
+				$('.slider_wrapper')._TMS({
+					show:0,
+					pauseOnHover:false,
+					prevBu:'.prev',
+					nextBu:'.next',
+					playBu:false,
+					duration:800,
+					preset:'fade',
+					pagination:true,//'.pagination',true,'<ul></ul>'
+					pagNums:false,
+					slideshow:8000,
+					numStatus:false,
+					banners: 'fade',
+					waitBannerAnimation:false,
+					progressBar:false
+				});
+			});
+			$(document).ready(function(){
+				!function(){
+			var map=[]
+			 ,names=[]
+			 ,win=$(window)
+			 ,header=$('header')
+			 ,currClass
+			$('.content').each(function(n){
+			 map[n]=this.offsetTop
+			 names[n]=$(this).attr('id')
+			})
+			win
+			 .on('scroll',function(){
+				var i=0
+				while(map[i++]<=win.scrollTop());
+				if(currClass!==names[i-2])
+				currClass=names[i-2]
+				header.removeAttr("class").addClass(names[i-2])
+			 })
+			}(); });
+					function goToByScroll(id){
+				$('html,body').animate({scrollTop: $("#"+id).offset().top},'slow');
+				}
+				$(document).ready(function(){
+					$().UItoTop({ easingType: 'easeOutQuart' });
+				});
+		</script>
+		<!--[if lt IE 8]>
+			<div style=' clear: both; text-align:center; position: relative;'>
+				<a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+					<img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+				</a>
+			</div>
+		<![endif]-->
+		<!--[if lt IE 9]>
+			<script src="js/html5shiv.js"></script>
+			<link rel="stylesheet" media="screen" href="css/ie.css">
+		<![endif]-->
+		<link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
+		<style type="text/css">
+		#mc_embed_signup{background:#313d4c; clear:left; font:14px Helvetica,Arial,sans-serif; }	
+</style>
+	</head>
+	<body class="">
+<!--==============================header=================================-->
+		<header class="page1">
+			<div class="container_12">
+				<div class="grid_12">
+					<h1><a href="#" onClick="goToByScroll('page1'); return false;"><img src="images/logo.png" alt=" "></a></h1>
+					<div class="menu_block">
+						<nav class="">
+							<ul class="sf-menu">
+								<li class="current men"><a onClick="goToByScroll('page1'); return false;" href="#">Home </a> <strong class="hover"></strong></li>
+								<li class="men1"><a onClick="goToByScroll('page2'); return false;" href="#">Get Involved</a><strong class="hover"></strong></li>
+								<li class="men2"><a onClick="goToByScroll('page3'); return false;" href="#">Location</a> <strong class="hover"></strong></li>
+								<li class="men3"><a onClick="goToByScroll('page4'); return false;" href="#">Our Supporter</a> <strong class="hover"></strong></li>
+								<li class="men4"><a onClick="goToByScroll('page5'); return false;" href="#">Contacts</a> <strong class="hover"></strong></li>
+							</ul>
+						</nav>
+						<div class="clear"></div>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</header>
+<!--=======content================================-->
+		<div id="page1" class="content">
+			<div>	
+				<div class="container_12">
+					<div class="grid_5">
+						<div class="box">							
+							<img src="images/logo_bekraf.png" alt="">
+							<div class="text1">present</div>
+						</div>					
+					</div>
+					<div class="grid_6">	
+						<div class="box">					
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/s_qBvcdHtoU" frameborder="0" allowfullscreen></iframe>
+						</div>
+					</div>										
+				</div>
+			</div>			
+				
+			<div class="container_12">
+				<div class="grid_12">
+					<div class="socials">
+						<a href="https://www.facebook.com/codingmum"target="_blank"></a>
+						<a href="https://twitter.com/codingmum_id"target="_blank"></a>
+						<!-- <a href="#"></a>
+						<a href="#"></a> -->
+					</div>
+				</div>	
+			</div>
+		</div>
+		
+		<div id="page2" class="content">
+			<div class="container_12">				
+				<div class="grid_3">
+					<div class="box">
+						<img src="images/box1_img1.png" alt="">
+						<div class="text1">Mum</div> 
+						<div class="text2">I want to join the class</div> 
+						<div class="text2">							
+							Please check <a href="men2"target="_blank"class="link-1"onClick="goToByScroll('page3'); return false;" href="#"> the location</a> where do you want to join the class, if there is a schedule, please fill in the registration form <br> 
+							If the class is not available yet, please <a href="http://goo.gl/forms/244DoI1r5L"target="_blank"class="link-1">subscribe your email</a> to get the class update from us <br>
+						</div>							
+					</div>
+				</div>					
+				
+				<div class="grid_3">
+					<div class="box">
+						<img src="images/box1_img2.png" alt="">
+						<div class="text1">Expert</div>
+						<div class="text2">I want to help coach</div> 
+						<div class="text2">
+							We need you to enlarge Coding Mum in your area, you can join with <a href="men3"target="_blank"class="link-1"onClick="goToByScroll('page4'); return false;" href="#">current education company </a> that already join us or you can create <a href="mailto:contact@codingmum.id?subject=CodingMum Company Profile for Coach"class="link-1">a new class by sending us your company profile</a><br> 
+						</div>	
+					</div>
+				</div>
+				<div class="grid_3">
+					<div class="box">
+						<img src="images/box1_img3.png" alt="">
+						<div class="text1">Company</div>
+						<div class="text2">I want to hire</div> 
+						<div class="text2">
+							We are going to have Coding Mum Graduated every month, please check <a href="https://www.sribulancer.com/en/bf/freelancer/v3"target="_blank"class="link-1">Sribulancer "Coding Mum" section </a> to get our graduated detail and portfolio<br>
+						</div>	
+					</div>
+				</div>
+				<div class="grid_3">
+					<div class="box">
+						<img src="images/box1_img4.png" alt="">					
+						<div class="text1">Sponsor</div> 
+						<div class="text2">I want to support</div> 						
+						<div class="text2">
+							We need more grant so we can give more scholarship, please let us know if you want <a href="mailto:contact@codingmum.id?subject=Company Sponsor"class="link-1"target="_blank"class="link-1">to become our sponsor </a> and we will contact you very soon.
+							Or if you have your CSR program and would like to have Coding Mum for your company, <a href="mailto:contact@codingmum.id?subject=Coding Mum for our Company"class="link-1"target="_blank"class="link-1">please send us your needs detail </a>and we can help you out.
+						</div>	
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div id="page3" class="content">
+			<div class="container_12">
+				<div>
+					<div class="grid_3">
+						<div class="box">
+							<div class="text1">Jakarta</div> 
+							<div class="text2">
+								<a href="http://goo.gl/forms/zHgy3DTMgI"target="_blank"class="link-1">Fill in the regristration form before 26 March 2016 to join the screening</a>
+							</div>
+							<div class="text3">
+								<ul style="list-style-type:disc">
+									<li>Class Subsidi 02 by Clevio - Sabang-Pagi - 4 April 2016 - Regristration for Selection is Open</li><br>
+									<li>Class Regular 02 by Clevio - Sabang-Siang - 13 April 2016 - Regristration is Open</li><br>
+									<li>Class Regular 01 by Clevio - Sabang - Maret 2016 - On Progress</li><br>
+									<li>Class Subsidi 01 by Clevio - Sabang - Feb 2016 - On Progress</li><br>
+									<li>Beta Class 02 by Clevio - Mendawai - Jan 2016 - On Progress</li><br>
+									<li>Beta Class 01 by Clevio - Cibubur - Des 2015 - Graduated</li><br>
+								</ul>
+							</div>						
+						</div>
+					</div>
+					<div class="grid_3">
+						<div class="box">
+							<div class="text1">Malang</div> 
+							<div class="text2">
+								<a href="http://goo.gl/forms/zHgy3DTMgI"target="_blank"class="link-1">Fill in the regristration form before 26 March 2016 to join the screening</a>
+							</div>
+							<div class="text3">
+								<ul style="list-style-type:disc">										
+										<li>Class Subsidi by Dilo Malang - Pagi - 31 Maret 2016 - Regristration for Selection is Open</li>										
+								</ul>
+							</div>								
+						</div>
+					</div>
+					<div class="grid_3">
+						<div class="box">							
+							<div class="text1">Surabaya</div>
+							<div class="text2">
+								<a href="http://goo.gl/forms/zHgy3DTMgI"target="_blank"class="link-1">Fill in the regristration form before 26 March 2016 to join the screening</a>
+							</div>
+							<div class="text3">
+								<ul style="list-style-type:disc">										
+										<li>Class Subsidi by Dilo Surabaya - Pagi - 11 April 2016 - Regristration for Selection is Open</li>
+								</ul>
+							</div>			
+						</div>
+					</div>
+					<div class="grid_3">
+						<div class="box">
+							<div class="text1">Bandung</div> 
+							<div class="text2">
+								<a href="http://goo.gl/forms/zHgy3DTMgI"target="_blank"class="link-1">Fill in the regristration form before 11 April 2016 to join the screening</a>
+							</div>
+							<div class="text3">	
+								<ul style="list-style-type:disc">										
+										<li>Class Subsidi by ProCode CG - Pagi - 18 April 2016 - Regristration To be Announced</li>
+								</ul>	
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="clear"></div>
+			<div class="container_12">
+				<div>
+					<div class="grid_3">
+						<div class="box">							
+							<div class="text1">Bogor</div> 
+							<div class="text2">
+								<a href="http://goo.gl/forms/244DoI1r5L"target="_blank"class="link-1">Subscribe your email to get Coding Mum newsletter so you won't miss Bogor class</a>
+							</div>
+							<div class="text3">
+								<ul style="list-style-type:disc">										
+										<li>Class Subsidi by Clevio - Pagi - May 2016 - Regristration To be Announced</li>										
+								</ul>
+							</div>								
+						</div>
+					</div>
+					<div class="grid_3">
+						<div class="box">
+							<div class="text1">Makasar</div>
+							<div class="text2">
+								<a href="http://goo.gl/forms/244DoI1r5L"target="_blank"class="link-1">Subscribe your email to get Coding Mum newsletter so you won't miss Makasar class</a>
+							</div>
+							<div class="text3">
+								<ul style="list-style-type:disc">										
+										<li>Class Subsidi by Dillo Makasar - Pagi - 4 April 2016 - Regristration To be Announced</li>										
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="grid_3">
+						<div class="box">							
+							<div class="text1">Where is my city?</div>
+							<div class="text2">
+								<a href="http://goo.gl/forms/244DoI1r5L"target="_blank"class="link-1">Subscribe your email to get Coding Mum newsletter so you won't miss class in your city</a>
+							</div>
+							<div class="text3">
+								<ul style="list-style-type:disc">										
+										<li>If you have 10 mums willing to learn Coding Mum, please let us know! we can open one for you</li>
+								</ul>
+							</div>	
+						</div>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			
+		</div>
+		
+		<div id="page4" class="content">
+			<div class="container_12">
+				<div>
+					<div class="grid_6">
+						<h4>Program Initiated by</h4>
+						<img src="images/logo1.jpg" alt="">
+						<div class="text1">BEKRAF</div>
+						<a href="https://twitter.com/bekrafid" target="_blank">Go to Site</a>
+						<br>						
+					</div>					
+					<div class="grid_6">
+						<h4>Main Sponsor</h4>
+						<img src="images/logo2.jpg" alt="">
+						<div class="text1">7Eleven Indonesia</div>
+						<a href="http://7elevenid.com/company/" target="_blank">Go to Site</a>
+						<br>						
+					</div>					
+				</div>
+				<div>
+					<div class="grid_12">
+						<h4>Collaborated with</h4>
+					</div>
+					<div class="clear"></div>
+					<div class="companies">
+						<div class="grid_3">
+							<img src="images/logo3.jpg" alt="">
+							<div class="text1">Clevio</div>
+							<a href="http://clevio.co/camp/" target="_blank">Go to Site</a>
+							<br>
+						</div>
+						<div class="grid_3">
+							<img src="images/logo4.jpg" alt="">
+							<div class="text1">MIKTI-DILO</div>
+							<a href="http://dilo.id/" target="_blank">Go to Site</a>
+							<br>
+						</div>
+						<div class="grid_3">
+							<img src="images/logo5.jpg" alt="">
+							<div class="text1">ProCodeCG</div>
+							<a href="http://www.procodecg.com/about.html" target="_blank">Go to Site</a>
+							<br>
+						</div>
+					</div>
+				<div class="clear"></div>
+				</div>
+				<div>
+					<div class="grid_12">
+						<h4>Sponsored by</h4>
+					</div>
+					<div class="clear"></div>
+					<div class="companies">
+						<div class="grid_3">
+							<img src="images/logo6.jpg" alt="">
+							<div class="text1">Bhinneka.com</div>
+							<a href="http://www.bhinneka.com/aspx/bhindexpc.aspx" target="_blank">Go to Site</a>
+							<br>
+						</div>
+						<div class="grid_3">
+							<img src="images/logo7.jpg" alt="">
+							<div class="text1">Tokopedia</div>
+							<a href="https://www.tokopedia.com/" target="_blank">Go to Site</a>
+							<br>
+						</div>
+						<div class="grid_3">
+							<img src="images/logo8.jpg" alt="">
+							<div class="text1">OLX</div>
+							<a href="http://olx.co.id/" target="_blank">Go to Site</a>
+							<br>
+						</div>
+						<div class="grid_3">
+							<img src="images/logo9.jpg" alt="">
+							<div class="text1">Sribulancer</div>
+							<a href="https://www.sribulancer.com/" target="_blank">Go to Site</a>
+							<br>
+						</div>						
+						<div class="grid_3">
+							<img src="images/logo10.jpg" alt="">
+							<div class="text1">Mandiri</div>
+							<a href="http://www.bankmandiri.co.id/" target="_blank">Go to Site</a>
+							<br>
+						</div>
+						<div class="grid_3">
+							<img src="images/logo11.jpg" alt="">
+							<div class="text1">Polytron</div>
+							<a href="https://www.polytron.co.id/" target="_blank">Go to Site</a>
+							<br>
+						</div>
+						<div class="grid_3">
+							<img src="images/logo12.jpg" alt="">
+							<div class="text1">PT. DAM</div>
+							<a href="http://ptdam.co.id/" target="_blank">Go to Site</a>
+							<br>
+						</div>
+						<div class="grid_3">
+							<img src="images/logo13.jpg" alt="">
+							<div class="text1">M-Saku</div>
+							<a href="http://www.m-saku.me/" target="_blank">Go to Site</a>
+							<br>
+						</div>						
+						<div class="grid_3">
+							<img src="images/logo14.jpg" alt="">
+							<div class="text1">7-Langit</div>
+							<a href="http://7langit.com/" target="_blank">Go to Site</a>
+							<br>
+						</div>						
+						<div class="grid_3">
+							<img src="images/logo16.jpg" alt="">
+							<div class="text1">Telunjuk.com</div>
+							<a href="https://www.telunjuk.com/" target="_blank">Go to Site</a>
+							<br>
+						</div>
+					</div>
+				</div>
+				<div>
+					<div class="grid_12">
+						<h4>CSR Partner</h4>
+					</div>
+					<div class="clear"></div>
+					<div class="companies">
+						<div class="grid_3">
+							<img src="images/logo15.jpg" alt="">
+							<div class="text1">Blue Bird Group</div>
+							<a href="http://www.bluebirdgroup.com/" target="_blank">Go to Site</a>
+							<br>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div id="page5" class="content">
+			<div class="container_12">
+				<div class="clear"></div>
+				<div class="map">
+					<div class="grid_6">
+						<div class="text1">Coding Mum HQ</div>
+						<address>
+							<dl>
+								Kolla.ID <br>
+								7-Eleven 2nd Floor<br>
+								Jalan KH Agus Salim No.32B, Menteng <br>
+								Daerah Khusus Ibukota Jakarta 10340 <br>
+								</dt>
+								<dd>E-mail: <a href="mailto:contact@codingmum.id?subject=CodingMum Question"target="_blank"class="link-1"> contact@codingmum.id </a></dd>
+							</dl>
+						</address>
+						<div class="clear"></div>
+						<div>
+						Please <a href="http://goo.gl/forms/244DoI1r5L"target="_blank"class="link-1">subscribe your email</a> to get the latest update about Coding Mum from us <br>
+						</div>
+					</div>				
+					<div class="grid_6">
+						<div class="text1"></div>
+						<figure class="">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.591504087267!2d106.82269164999724!3d-6.185386262303763!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f431abdadaff%3A0xcbfd1a4211d27f14!2s7-Eleven!5e0!3m2!1sen!2sid!4v1457857548355" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+						</figure>
+					</div>					
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+<!--==============================footer=================================-->
+		<footer>
+			<div class="container_12">
+				<div class="grid_12">
+					<div class="copy">
+						<a onClick="goToByScroll('page1'); return false;" href="#"><img src="images/footer_logo.png" alt=""></a>  &copy; 2016 | <a href="#">Privacy Policy</a> <br> Website designed by Coding Mum team
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</footer>
+	</body>
+</html>
